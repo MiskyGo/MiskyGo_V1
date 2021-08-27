@@ -1,69 +1,69 @@
-<! DOCTYPE html >
-<html lang="es">
-<cabeza>
-	<título>Contacto V5</título>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V5</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilos" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="vendor/noui/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
 <!--===============================================================================================-->
-	<link rel="hoja de estilo" type="text/css" href="css/util.css">
-	<link rel="hoja de estilo" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-</cabeza>
-<cuerpo>
+</head>
+<body>
 
 
 	<div class="container-contact100">
-		<clase div ="wrap-contact100">
+		<div class="wrap-contact100">
 
-		</Div>
-	</Div>
+		</div>
+	</div>
 	<!-- viewform?usp=pp_url&entry.384194156=nombre&entry.1792553450=apellido -->
-	<!-- <div id="contacto">
- <h2>Contate en contacto</h2>
- <div id="formulario de contacto">
- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbHxjgEHC1uaoYlGUaeOs59TqImsCzhc1iTy0uMiO0J2qanQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" >
- Nombre:<br>
+	<!-- <div id="contact">
+		<h2>Get in Touch</h2>
+		<div id="contact-form">
+			<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbHxjgEHC1uaoYlGUaeOs59TqImsCzhc1iTy0uMiO0J2qanQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+				First name:<br>
 				<input type="text" name="entry.384194156"><br>
- Apellido:<br>
+				Last name:<br>
 				<input type="text" name="entry.1792553450">
 				<input type="submit" value="Submit">
- </formulario>
+			</form>
 			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 		</div>
- </div>-->
-	<div id="contacto">
-		<h2>Póngase en contacto</h2>
-		<div id=" formulariode contacto">
+	</div>  -->
+	<div id="contact">
+		<h2>Get in Touch</h2>
+		<div id="contact-form">
 			
-			<acción de formulario ="https://usebasin.com/f/9b535797abac" método="POST">
-				<label for="dirección de correo electrónico">Dirección de correo electrónico</etiqueta>
-				<tipo deentrada ="correo electrónico" id= "correo electrónico" nombre= "correo electrónico" requerido>
-				<tipo de entrada ="texto" id= "nombre" nombre= "nombre" requerido>
-				<tipo de botón = "enviar">Enviar</botón>
-			</forma>
+			<form action="https://usebasin.com/f/9b535797abac" method="POST">
+				<label for="email-address">Email Address</label>
+				<input type="email" id="email" name="email" required>
+				<input type="text" id="name" name="name" required>
+				<button type="submit">Submit</button>
+			</form>
 			<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
-		</Div>
-	</Div>
+		</div>
+	</div>
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -78,31 +78,31 @@
 	<script type="text/javascript">var submitted=false;</script>
 	<script type="text/javascript">
 		$('#gform').on('submit', function(e) {
-		  $('#gform *'). fadeOut(2000);
-		  $(«#gform»). prepend('Su presentación ha sido procesada...');
+		  $('#gform *').fadeOut(2000);
+		  $('#gform').prepend('Your submission has been processed...');
 		  });
-		</Guión>
-	<Guión>
-		$(".js-select2"). cada(función(){
-			$(esto). seleccionar2({
+		</script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
 				minimumResultsForSearch: 20,
-				dropdownPadent: $(este). siguiente('.dropDownSelect2')
+				dropdownParent: $(this).next('.dropDownSelect2')
 			});
 
 
-			$(".js-select2"). cada(función(){
-				$(esto). on('select2:close', función (e){
-					if($(esto). val() == "Por favor, elige") {
-						$(«.js-show-service»). slideUp();
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
 					}
-					más {
-						$(«.js-show-service»). slideUp();
-						$(«.js-show-service»). slideDown();
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
 					}
 				});
 			});
 		})
-	</Guión>
+	</script>
 <!--===============================================================================================-->
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
@@ -110,41 +110,41 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/noui/nouislider.min.js"></script>
-	<Guión>
-	    var filterBar = documento. getElementById('barra de filtro');
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
 
-	    noUiSlider. create(filterBar, {
-	        inicio: [ 1500, 3900 ],
-	        conectar: true,
-	        rango: {
+	    noUiSlider.create(filterBar, {
+	        start: [ 1500, 3900 ],
+	        connect: true,
+	        range: {
 	            'min': 1500,
-	            'máx.': 7500
+	            'max': 7500
 	        }
 	    });
 
 	    var skipValues = [
-	    documento. getElementById('valor-más bajo'),
-	    documento. getElementById('valor-superior')
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
 	    ];
 
-	    filterBar. noUiSlider. on('actualizar', función( valores, identificador ) {
-	        skipValues[handle]. innerHTML = Matemáticas. redondo(valores[handle]);
-	        $('.contact100-form-range-value input[name="from-value"]'). val($('#value-más bajo'). html());
-	        $('.contact100-form-range-value input[name="to-value"]'). val($('#value-superior'). html());
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
 	    });
-	</Guión>
+	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-<!-- Etiqueta global del sitio (gtag.js) - Google Analytics -->
-<script asincrónico src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<Guión>
-  ventana. dataLayer = ventana.  dataLayer || [];
-  function gtag(){dataLayer. push(argumentos);}
-  gtag('js', nueva fecha());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
-</Guión>
+</script>
 
-</cuerpo>
-</HTML>
+</body>
+</html>
